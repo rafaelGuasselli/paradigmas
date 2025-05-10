@@ -1,0 +1,10 @@
+(defun print_line (x)
+	(write-line (write-to-string x))
+)
+
+(setf x (read) y (read))
+(setf div (mod x y))
+(if (= div 0)
+	(print_line "Divisivel")
+	(print_line "Não divisivel")
+)
